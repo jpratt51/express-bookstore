@@ -16,9 +16,11 @@
                 "isbn",
                 "amazon-url",
                 "author",
+                "language",
                 "pages",
                 "publisher",
-                "title"
+                "title",
+                "year"
             ],
             "properties": {
                 "isbn": {
@@ -26,7 +28,7 @@
                     "default": "",
                     "title": "The isbn Schema",
                     "examples": [
-                        "978-3-16-148410-0"
+                        "0691161518"
                     ]
                 },
                 "amazon-url": {
@@ -34,7 +36,7 @@
                     "default": "",
                     "title": "The amazon-url Schema",
                     "examples": [
-                        "https://www.amazon.com/"
+                        "http://a.co/eobPtX2"
                     ]
                 },
                 "author": {
@@ -42,7 +44,15 @@
                     "default": "",
                     "title": "The author Schema",
                     "examples": [
-                        "Edgar Allen Poe"
+                        "Matthew Lane"
+                    ]
+                },
+                "language": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The language Schema",
+                    "examples": [
+                        "english"
                     ]
                 },
                 "pages": {
@@ -50,7 +60,7 @@
                     "default": 0,
                     "title": "The pages Schema",
                     "examples": [
-                        274
+                        264
                     ]
                 },
                 "publisher": {
@@ -58,7 +68,7 @@
                     "default": "",
                     "title": "The publisher Schema",
                     "examples": [
-                        "Penguin Books"
+                        "Princeton University Press"
                     ]
                 },
                 "title": {
@@ -66,28 +76,40 @@
                     "default": "",
                     "title": "The title Schema",
                     "examples": [
-                        "The Raven"
+                        "Power-Up: Unlocking Hidden Math in Video Games"
+                    ]
+                },
+                "year": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The year Schema",
+                    "examples": [
+                        2017
                     ]
                 }
             },
             "examples": [{
-                "isbn": "978-3-16-148410-0",
-                "amazon-url": "https://www.amazon.com/",
-                "author": "Edgar Allen Poe",
-                "pages": 274,
-                "publisher": "Penguin Books",
-                "title": "The Raven"
+                "isbn": "0691161518",
+                "amazon-url": "http://a.co/eobPtX2",
+                "author": "Matthew Lane",
+                "language": "english",
+                "pages": 264,
+                "publisher": "Princeton University Press",
+                "title": "Power-Up: Unlocking Hidden Math in Video Games",
+                "year": 2017
             }]
         }
     },
     "examples": [{
         "book": {
-            "isbn": "978-3-16-148410-0",
-            "amazon-url": "https://www.amazon.com/",
-            "author": "Edgar Allen Poe",
-            "pages": 274,
-            "publisher": "Penguin Books",
-            "title": "The Raven"
+            "isbn": "0691161518",
+            "amazon-url": "http://a.co/eobPtX2",
+            "author": "Matthew Lane",
+            "language": "english",
+            "pages": 264,
+            "publisher": "Princeton University Press",
+            "title": "Power-Up: Unlocking Hidden Math in Video Games",
+            "year": 2017
         }
     }]
 }
