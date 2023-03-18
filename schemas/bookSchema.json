@@ -1,0 +1,93 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "book"
+    ],
+    "properties": {
+        "book": {
+            "type": "object",
+            "default": {},
+            "title": "The book Schema",
+            "required": [
+                "isbn",
+                "amazon-url",
+                "author",
+                "pages",
+                "publisher",
+                "title"
+            ],
+            "properties": {
+                "isbn": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The isbn Schema",
+                    "examples": [
+                        "978-3-16-148410-0"
+                    ]
+                },
+                "amazon-url": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The amazon-url Schema",
+                    "examples": [
+                        "https://www.amazon.com/"
+                    ]
+                },
+                "author": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The author Schema",
+                    "examples": [
+                        "Edgar Allen Poe"
+                    ]
+                },
+                "pages": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The pages Schema",
+                    "examples": [
+                        274
+                    ]
+                },
+                "publisher": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The publisher Schema",
+                    "examples": [
+                        "Penguin Books"
+                    ]
+                },
+                "title": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The title Schema",
+                    "examples": [
+                        "The Raven"
+                    ]
+                }
+            },
+            "examples": [{
+                "isbn": "978-3-16-148410-0",
+                "amazon-url": "https://www.amazon.com/",
+                "author": "Edgar Allen Poe",
+                "pages": 274,
+                "publisher": "Penguin Books",
+                "title": "The Raven"
+            }]
+        }
+    },
+    "examples": [{
+        "book": {
+            "isbn": "978-3-16-148410-0",
+            "amazon-url": "https://www.amazon.com/",
+            "author": "Edgar Allen Poe",
+            "pages": 274,
+            "publisher": "Penguin Books",
+            "title": "The Raven"
+        }
+    }]
+}
