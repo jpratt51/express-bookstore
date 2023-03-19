@@ -54,7 +54,6 @@ class Book {
             FROM books 
             ORDER BY title`
         );
-
         return booksRes.rows;
     }
 
@@ -129,13 +128,13 @@ class Book {
                   title,
                   year`,
             [
-                data.amazon_url,
-                data.author,
-                data.language,
-                data.pages,
-                data.publisher,
-                data.title,
-                data.year,
+                data.book.amazon_url,
+                data.book.author,
+                data.book.language,
+                data.book.pages,
+                data.book.publisher,
+                data.book.title,
+                data.book.year,
                 isbn,
             ]
         );
@@ -159,7 +158,6 @@ class Book {
          RETURNING isbn`,
             [isbn]
         );
-
         if (result.rows.length === 0) {
             throw {
                 message: `There is no book with an isbn '${isbn}`,
